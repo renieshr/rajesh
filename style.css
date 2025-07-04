@@ -359,7 +359,7 @@ nav {
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-    background: url('https://raw.githubusercontent.com/renieshr/rajesh/refs/heads/main/logo1.jpg') no-repeat center center/cove
+    background: url('https://raw.githubusercontent.com/renieshr/rajesh/refs/heads/main/logo1.jpg') no-repeat center center/cover;
 }
 .contact-editorial-section .contact-form label {
     color: var(--primary-color);
