@@ -1,0 +1,263 @@
+/* Responsive Styles for Template 5: The Magazine-Style Editorial */
+
+/* General adjustments for smaller screens */
+.section-padded {
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+h2::after {
+    width: 80px; /* Shorter underline */
+}
+
+/* Tablet & Smaller Desktops (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Header Editorial */
+    .header-editorial nav {
+        padding: 0 20px;
+        gap: 25px;
+    }
+    .header-editorial .logo h1 {
+        font-size: 1.8rem;
+    }
+    .header-editorial .nav-links li a {
+        font-size: 1rem;
+        gap: 20px;
+    }
+
+    /* Hero Editorial */
+    .hero-editorial {
+        height: 70vh; /* Reduce height */
+    }
+    .hero-editorial .hero-title h2 {
+        font-size: 4.5rem;
+    }
+    .hero-editorial .hero-title h3 {
+        font-size: 1.6rem;
+    }
+
+    /* Magazine Grid */
+    .magazine-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+        gap: 25px;
+    }
+    .magazine-grid .large-item {
+        grid-column: span 2; /* Still spans 2 columns */
+        grid-row: span 1; /* Only spans 1 row to prevent excessive height */
+    }
+    .magazine-grid .large-item img {
+        height: 350px; /* Adjust height for large item */
+    }
+    .magazine-grid .grid-item img {
+        height: 250px;
+    }
+    .magazine-grid .grid-caption h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Artist Statement Section */
+    .artist-statement-section .container {
+        grid-template-columns: 1fr; /* Stack columns */
+        gap: 40px;
+    }
+    .profile-img-editorial {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto 0; /* Center image */
+        float: none; /* Remove float */
+    }
+    .statement-column p {
+        text-align: center; /* Center text when stacked */
+    }
+
+    /* Service Grid */
+    .service-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+    .service-item {
+        padding: 25px;
+    }
+    .service-item h3 {
+        font-size: 1.4rem;
+    }
+
+    /* Blog Preview Grid */
+    .blog-preview-grid {
+        gap: 30px;
+    }
+    .blog-card img {
+        height: 180px;
+    }
+    .card-content h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Contact Editorial Section */
+    .contact-editorial-section .contact-form {
+        padding: 30px;
+    }
+    .contact-details-editorial {
+        font-size: 1.1rem;
+    }
+    .social-links a {
+        font-size: 1.6rem;
+    }
+}
+
+/* Mobile Phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    /* Header Editorial - Mobile Menu */
+    .header-editorial nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 20px;
+    }
+    .header-editorial .nav-links {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 70%;
+        background-color: var(--primary-color); /* Darker background */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        z-index: 999;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+    }
+    .header-editorial .nav-links.nav-active {
+        transform: translateX(0%);
+    }
+    .header-editorial .nav-links li {
+        margin: 25px 0;
+        opacity: 0; /* Hidden by default, animated by JS */
+    }
+    .header-editorial .nav-links.nav-active li {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out 0.3s;
+    }
+    .header-editorial .nav-links li a {
+        font-size: 1.8rem; /* Larger links for tapping */
+        color: var(--light-text-color);
+        padding: 0;
+    }
+    .header-editorial .nav-links li a::after {
+        display: none; /* Hide hover effect on mobile nav */
+    }
+
+    /* Hamburger Burger (add this HTML in your index.html) */
+    .burger-editorial {
+        display: block; /* Show burger icon */
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .burger-editorial div {
+        width: 25px;
+        height: 3px;
+        background-color: var(--primary-color); /* Matches logo text */
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    /* Burger Animation (Toggle state) */
+    .toggle .burger-editorial div:nth-child(1) { transform: rotate(-45deg) translate(-5px, 6px); }
+    .toggle .burger-editorial div:nth-child(2) { opacity: 0; }
+    .toggle .burger-editorial div:nth-child(3) { transform: rotate(45deg) translate(-5px, -6px); }
+
+
+    /* Hero Editorial */
+    .hero-editorial {
+        height: 60vh;
+    }
+    .hero-editorial .hero-title h2 {
+        font-size: 3.5rem;
+    }
+    .hero-editorial .hero-title h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Magazine Grid */
+    .magazine-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 20px;
+    }
+    .magazine-grid .large-item {
+        grid-column: span 1; /* Reset span for single column */
+        grid-row: auto;
+    }
+    .magazine-grid .large-item img {
+        height: 280px;
+    }
+    .magazine-grid .grid-item img {
+        height: 200px;
+    }
+    .magazine-grid .grid-caption h3 {
+        font-size: 1.2rem;
+    }
+    .magazine-grid .grid-caption p {
+        font-size: 0.9rem;
+    }
+
+    /* Artist Statement Section */
+    .artist-statement-section .container {
+        padding: 0 10px; /* Reduce inner padding */
+    }
+    .statement-column p {
+        font-size: 0.95rem;
+    }
+
+    /* Service Grid */
+    .service-grid {
+        grid-template-columns: 1fr; /* Single column */
+    }
+    .service-item {
+        padding: 20px;
+    }
+
+    /* Blog Preview Grid */
+    .blog-preview-grid {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    /* Contact Editorial Section */
+    .contact-editorial-section .contact-form {
+        padding: 25px;
+    }
+    .contact-details-editorial {
+        font-size: 1rem;
+    }
+    .social-links a {
+        font-size: 1.4rem;
+    }
+}
+
+/* Very Small Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .header-editorial .logo h1 {
+        font-size: 1.5rem;
+    }
+    .hero-editorial .hero-title h2 {
+        font-size: 2.8rem;
+    }
+    .hero-editorial .hero-title h3 {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .full-screen-nav li a {
+        font-size: 1.5rem;
+    }
+}
+
+/* Keyframe for mobile nav link animation */
+@keyframes navLinkFade {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0px); }
+}
