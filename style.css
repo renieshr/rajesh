@@ -1,7 +1,7 @@
 /* Template 5: Magazine-Style Editorial - Core Styles */
 
 :root {
-    --primary-color: #333; /* Dark Charcoal */
+    --primary-color: #333; /* Dark Grey */
     --secondary-color: #f8f8f8; /* Creamy White */
     --accent-color: #A98467; /* Muted Gold/Sepia */
     --text-color: #3d3d3d;
@@ -57,7 +57,6 @@ h1, h2, h3 {
 /* Header Editorial */
 .header-editorial {
     background: var(--secondary-color);
-    background: url('https://renieshr/rajesh/refs/heads/main/background.JPG') no-repeat center center/cover;
     padding: 1.5rem 0;
     position: fixed;
     width: 100%;
@@ -68,7 +67,7 @@ h1, h2, h3 {
 }
 .header-editorial nav {
     display: flex;
-    max-width: 1200px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 40px;
     display: flex;
