@@ -139,7 +139,7 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('images/background.jpg') no-repeat center center/cover;
+    background: url('https://raw.githubusercontent.com/renieshr/rajesh/refs/heads/main/background.JPG') no-repeat center center/cover;
     color: var(--text-light);
     position: relative;
     padding-top: 80px; /* Offset for fixed header */
