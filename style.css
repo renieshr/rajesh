@@ -57,6 +57,7 @@ h1, h2, h3 {
 /* Header Editorial */
 .header-editorial {
     background: var(--secondary-color);
+    background: url('https://raw.githubusercontent.com/renieshr/rajesh/refs/heads/main/background.JPG') no-repeat center center/cover;
     padding: 1.5rem 0;
     position: fixed;
     width: 100%;
