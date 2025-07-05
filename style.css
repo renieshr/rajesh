@@ -167,7 +167,7 @@ nav {
 }
 
 /* Portfolio Gallery */
-.portfolio-gallery, .about-me,.editorial-section, editorial-blog-section .contact-section {
+.portfolio-gallery, .about-me,.editorial-section, .editorial-blog-section .contact-section {
     padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
