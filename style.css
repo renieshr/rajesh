@@ -174,7 +174,7 @@ nav {
     text-align: center;
 }
 
-.portfolio-gallery h2, .about-me h2, .editorial-section h2, .editorial-blog-section h2, .contact-section h2 {
+.portfolio-gallery h2, .about-me h2, .editorial-section h2, editorial-blog-section h2 .contact-section h2 {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     margin-bottom: 50px;
@@ -368,7 +368,7 @@ nav {
 .contact-editorial-section .contact-form textarea {
     background: #0f0f0f;
     border: var(--border-subtle);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .contact-editorial-section .contact-form input::placeholder,
 .contact-editorial-section .contact-form textarea::placeholder {
