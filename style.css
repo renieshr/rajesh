@@ -362,7 +362,7 @@ nav {
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 .contact-editorial-section .contact-form label {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .contact-editorial-section .contact-form input,
 .contact-editorial-section .contact-form textarea {
