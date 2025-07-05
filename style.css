@@ -270,10 +270,10 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-top: 35px;
+    gap: 15px;
+    margin-top: 30px;
 }
 .service-item {
     background: var(--light-text-color);
@@ -284,12 +284,12 @@ nav {
     border-top: 4px solid var(--accent-color);
 }
 .service-item h3 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-bottom: 15px;
     color: var(--primary-color);
 }
 .service-item p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.7;
     color: #555;
 }
