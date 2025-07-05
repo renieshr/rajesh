@@ -350,7 +350,7 @@ nav {
     padding: 100px 40px;
 }
 .contact-editorial-section h2 {
-    color: var(--light-text-color);
+    color: var(--secondary-color);
     margin-bottom: 50px;
 }
 .contact-editorial-section .contact-form {
