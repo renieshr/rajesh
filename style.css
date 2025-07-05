@@ -2,7 +2,7 @@
 :root {
     --primary-color: #0f1313;
     --secondary-color:rgb(199, 214, 216);
-    --accent-color:rgb(90, 97, 97); /* A nice blue for accents */
+    --accent-color: #12a099; /* A nice blue for accents */
     --background-light: hsla(0, 0%, 96%, 0.897);
     --text-dark: #111010;
     --text-light: #ffffff;
@@ -58,7 +58,6 @@ header {
     left: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(218, 215, 214, 0);
-    background: url('https://raw.githubusercontent.com/renieshr/rajesh/refs/heads/main/logo1.jpg') no-repeat center center/cover;
 }
 
 nav {
@@ -117,7 +116,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('https://raw.githubusercontent.com/renieshr/rajesh/refs/heads/main/background.JPG') no-repeat center center/cover;
+    background: url('https://raw.githubusercontent.com/renieshr/renieshr.github.io/refs/heads/main/background.JPG') no-repeat center center/cover;
     color: var(--text-light);
     position: relative;
     padding-top: 80px; /* Offset for fixed header */
@@ -168,14 +167,14 @@ nav {
 }
 
 /* Portfolio Gallery */
-.portfolio-gallery, .about-me, .contact-section {
+.portfolio-gallery, .about-me, .service-grid, .blog-preview-grid, .contact-details-editorial,  {
     padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
-.portfolio-gallery h2, .about-me h2, .contact-section h2 {
+.portfolio-gallery h2, .about-me h2, .service-grid h2, .blog-preview-grid h2, .contact-details-editorial h2, {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     margin-bottom: 50px;
@@ -267,140 +266,49 @@ nav {
     line-height: 1.8;
 }
 
-/* Services Grid */
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-.service-item {
-    background: var(--light-text-color);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: var(--box-shadow-light);
-    text-align: left;
-    border-top: 4px solid var(--accent-color);
-}
-.service-item h3 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: var(--primary-color);
-}
-.service-item p {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #555;
+/* Contact Section */
+.contact-section p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
 }
 
-/* Editorial Blog Section */
-.blog-preview-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    margin-top: 50px;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    text-align: left;
 }
-.blog-card {
-    background: var(--light-text-color);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: var(--box-shadow-light);
-    transition: transform 0s ease;
+
+.form-group {
+    margin-bottom: 20px;
 }
-.blog-card:hover {
-    transform: translateY(-5px);
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
-.blog-card img {
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-}
-.card-content {
-    padding: 20px;
-    text-align: left;
-}
-.card-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-.card-content h3 a {
-    color: var(--primary-color);
-    transition: color 0s ease;
-}
-.card-content h3 a:hover {
-    color: var(--accent-color);
-}
-.card-content .date {
-    font-size: 0.9rem;
-    color: #999;
-    margin-bottom: 10px;
-    display: block;
-}
-.card-content p {
-    font-size: 0.95rem;
-    color: #666;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: var(--font-body);
+    font-size: 1rem;
 }
 
-/* Contact Editorial Section */
-.contact-editorial-section {
-    background: var(--primary-color);
-    color: var(--light-text-color);
-    padding: 100px 40px;
-}
-.contact-editorial-section h2 {
-    color: var(--light-text-color);
-    margin-bottom: 50px;
-}
-.contact-editorial-section .contact-form {
-    max-width: 700px;
-    margin: 0 auto 50px auto;
-    background: var(--secondary-color);
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-    background: url('https://raw.githubusercontent.com/renieshr/rajesh/refs/heads/main/logo1.jpg') no-repeat center center/cover;
-}
-.contact-editorial-section .contact-form label {
-    color: var(--primary-color);
-}
-.contact-editorial-section .contact-form input,
-.contact-editorial-section .contact-form textarea {
-    background: #fff;
-    border: var(--border-subtle);
-    color: var(--primary-color);
-}
-.contact-editorial-section .contact-form input::placeholder,
-.contact-editorial-section .contact-form textarea::placeholder {
-    color: #aaa;
+.form-group textarea {
+    resize: vertical;
 }
 
-.btn-editorial {
-    background: var(--accent-color);
-    color: var(--light-text-color);
-    padding: 12px 30px;
-    border-radius: 4px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: background-color 0.3s ease;
-}
-.btn-editorial:hover {
-    background: #9a6f56;
+.contact-form .btn {
+    align-self: flex-start;
 }
 
-.contact-details-editorial {
-    font-family: var(--font-subheading);
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-top: 30px;
-}
-.contact-details-editorial p {
-    margin-bottom: 10px;
-    color: #ccc;
-}
-.contact-details-editorial p a {
-    color: var(--accent-color);
-}
 .social-links {
     margin-top: 30px;
 }
