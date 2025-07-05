@@ -356,7 +356,7 @@ nav {
 .contact-editorial-section .contact-form {
     max-width: 700px;
     margin: 0 auto 50px auto;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
@@ -366,7 +366,7 @@ nav {
 }
 .contact-editorial-section .contact-form input,
 .contact-editorial-section .contact-form textarea {
-    background: #fff;
+    background: #0f0f0f;
     border: var(--border-subtle);
     color: var(--primary-color);
 }
