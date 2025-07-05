@@ -167,14 +167,14 @@ nav {
 }
 
 /* Portfolio Gallery */
-.portfolio-gallery, .about-me, .contact-section {
+.portfolio-gallery, .about-me, .service-grid, .blog-preview-grid, .contact-section {
     padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
-.portfolio-gallery h2, .about-me h2, .contact-section h2 {
+.portfolio-gallery h2, .about-me h2,.service-grid h2, .blog-preview-grid h2, .contact-section h2 {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     margin-bottom: 50px;
